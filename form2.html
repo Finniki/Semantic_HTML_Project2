@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Semantic HTML 2</title>
+</head>
+<body>
+  <form class="form" action="#" autocomplete="on">
+    <h1 class="form-title">Payment form</h1>
+    <p class='form-info'>Required fields are followed by <strong><span aria-label="required">*</span></strong>.</p>
+<section class="section section-contact">
+  <h2 class="section-header section-contact__header">Contact information </h2>
+  <fieldset class="fieldset">
+    <legend class="legend">Title</legend>
+    <ul>
+      <li class="title-list">
+        <input type="radio" id="title_1" class="list-title__1" name="title" value="king" />
+        <label for="title_1">King</label>
+      </li>
+      <li class="title-list">
+        <input class="list-title__3" type="radio" id="title_2" name="title" value="queen" />
+        <label for="title_2">Queen</label>
+      </li>
+      <li class="title-list">
+        <input class="list-title__3" type="radio" id="ttile_3" name="title" value="joker" />
+        <label for="title_3">Joker</label>
+      </li>
+    </ul>
+  </fieldset>
+  <p class="user-input">
+    <label class="user-input__label" for="name">
+      <span>Name:</span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input class="user-input__input" type="text" id="name" name="username" />
+  </p>
+  <p class="user-input">
+    <label  class="user-input__label"for="mail">
+      <span>E-mail: </span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input  class="user-input__input"type="email" id="mail" name="email" />
+  </p>
+  <p class="user-input">
+    <label  class="user-input__label"for="password">
+      <span>Password</span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input  class="user-input__input"type="password" id="password" name="password">
+  </p>
+</section>
+<section class="section section-payment">
+  <h2 class="section-header section-payment__header">Payment information:</h2>
+  <p>
+    <label  class="user-input__label"for="card">
+      <span>Card type:</span>
+    </label>
+    <select class="user-input__input" id="card" name="usercard">
+      <option value="">Select One</option>
+      <option value="visa">Visa</option>
+      <option value="mastercard">Mastercard</option>
+      <option value="amex">American Express</option>
+    </select>
+  </p>
+  <p class="user-input">
+    <label class="user-input__label" for="number">
+      <span>Card number:</span>
+      <strong><span aria-label="required"></span></strong>
+    </label>
+    <input class="user-input__input" type="tel" id="number" name="cardnumber">
+  </p>
+  <div class="inline">
+  <p class="user-input">
+    <label class="user-input__label" for="expiration">
+      <span>Expiration date: </span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input class="user-input__input date-input" type="text" id="expiration" required="true" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})%$" />
+  </p>
+  <p class="user-input">
+    <label class="user-input__label" for="cvv">
+      <span>CVV: </span>
+      <strong><span aria-label="required">*</span></strong>
+    </label>
+    <input class="user-input__input date-input" type="text" id="expiration" required="true" />
+  </p>
+  </div>
+</section>
+<section class="section section-submit">
+  <p>
+    <button class="submit" type="submit">Validate the payment</button>
+  
+    <button class="submit btn" type="submit">
+      <a href="index.html" target="_blank" class="link"> view form 1</a></button>
+  </p>
+</section>
+  </form>
+</body>
+</html>
